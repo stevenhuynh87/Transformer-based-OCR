@@ -1,0 +1,27 @@
+[project]
+name = "jersey-rect"
+version = "0.0.1"
+description = "Spatio-temporal deformable rectification + PARSeq for jersey number recognition"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+extend-exclude = "third_party/"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["third_party"]
+
+[tool.ruff.lint]
+# E/W pycodestyle, F pyflakes, I isort, B bugbear, UP pyupgrade, SIM simplify
+select = ["E", "W", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # line length is handled by black
+
+[tool.ruff.lint.isort]
+known-first-party = ["scripts", "utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

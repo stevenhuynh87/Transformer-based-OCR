@@ -1,4 +1,5 @@
 import torch
+
 print(f"PyTorch: {torch.__version__}")
 
 if torch.cuda.is_available():
