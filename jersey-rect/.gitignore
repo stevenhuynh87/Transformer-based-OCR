@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Secrets / local config
+.env
+*.local.yaml
+
+# Datasets and caches (never commit raw data)
+datasets/
+data/raw/
+data/processed/
+data/cache/
+*.zip
+*.tar
+*.tar.gz
+*.mp4
+*.mkv
+*.npz
+*.h5
+*.lmdb/
+
+# Training outputs
+outputs/
+runs/
+checkpoints/
+lightning_logs/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+paper/*.pdf
+thesis/*.pdf
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

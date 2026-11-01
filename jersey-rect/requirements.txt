@@ -1,0 +1,39 @@
+# Install torch/torchvision first with the wheel matching your CUDA version:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.2
+torchvision>=0.17   # torchvision.ops.deform_conv2d (DCNv2), RAFT optical flow
+
+# Core
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+pillow>=10.0
+opencv-python>=4.8
+
+# Models
+timm>=0.9            # PARSeq backbone
+pytorch-lightning>=2.1
+nltk>=3.8            # PARSeq dependency
+# ViTPose: install mmpose (or easy_ViTPose) separately when building the pose cache (S08)
+
+# Data
+SoccerNet>=0.1.60    # SoccerNet downloader
+
+# Eval / analysis
+scikit-learn>=1.3
+statsmodels>=0.14    # McNemar test
+matplotlib>=3.7
+seaborn>=0.13
+fvcore>=0.1.5        # FLOPs counting
+
+# Logging
+tensorboard>=2.14
+wandb>=0.16
+
+# Dev
+pytest>=8.0
+pre-commit>=3.5
+ruff>=0.6
+black>=24.0
